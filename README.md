@@ -25,7 +25,6 @@ A Retrofit-based HTTP network request encapsulation library that provides simple
 ## 集成方式
 
 ### Gradle
-### Gradle
 
 ```gradle
 dependencies {
