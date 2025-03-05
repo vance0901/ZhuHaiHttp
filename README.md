@@ -1,5 +1,4 @@
 # HTTP Network Request Library
-# HTTP网络请求库
 
 A Retrofit-based HTTP network request encapsulation library that provides simple and easy-to-use API interfaces with complete network request functionality.
 基于Retrofit的HTTP网络请求封装库，提供简单易用的API接口和完整的网络请求功能。
@@ -30,7 +29,7 @@ A Retrofit-based HTTP network request encapsulation library that provides simple
 
 ```gradle
 dependencies {
-    implementation 'com.test:httplib:1.0.0'
+    implementation 'com.zhuhai.network:http:1.0.0'
 }
 ```
 
@@ -415,7 +414,7 @@ This library uses multiple design patterns:
 ## 项目结构
 
 ```
-com.test.http
+com.zhuhai.network.http
 ├── HttpManager.java               // HTTP Manager
 │                                  // HTTP管理器
 ├── api                            // API interface definitions
