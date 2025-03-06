@@ -18,7 +18,7 @@ public class TestApplication extends Application {
     private static final String TAG = "TestApplication";
     
     // 基础URL
-    private static final String BASE_URL = "https://test.xxxxx.com";
+    private static final String BASE_URL = "https://yourapi.com";
 
     @Override
     public void onCreate() {

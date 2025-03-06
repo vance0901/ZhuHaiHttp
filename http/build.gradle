@@ -1,7 +1,6 @@
-plugins {
-    id 'com.android.library'
-    id 'maven-publish'
-}
+apply plugin: 'com.android.library'
+//apply plugin: 'maven-publish'
+//apply plugin: 'signing'
 
 android {
     compileSdkVersion 30
@@ -26,9 +25,33 @@ android {
     }
 }
 
+// 添加源码JAR任务
+//task sourcesJar(type: Jar) {
+//    classifier = 'sources'
+//    from android.sourceSets.main.java.srcDirs
+//}
+//
+//// 添加Javadoc任务
+//task javadoc(type: Javadoc) {
+//    source = android.sourceSets.main.java.srcDirs
+//    classpath += project.files(android.getBootClasspath().join(File.pathSeparator))
+//    failOnError false
+//}
+//
+//// 添加JavaDoc JAR任务
+//task javadocJar(type: Jar, dependsOn: javadoc) {
+//    classifier = 'javadoc'
+//    from javadoc.destinationDir
+//}
+//
+//// 确保构建包含源码和JavaDoc JAR
+//artifacts {
+//    archives javadocJar
+//    archives sourcesJar
+//}
+
 dependencies {
-    implementation 'androidx.appcompat:appcompat:1.2.0'
-    
+
     // Retrofit
     api 'com.squareup.retrofit2:retrofit:2.9.0'
     api 'com.squareup.retrofit2:converter-gson:2.9.0'
@@ -38,15 +61,74 @@ dependencies {
     api 'com.google.code.gson:gson:2.8.9'
 }
 
-afterEvaluate {
-    publishing {
-        publications {
-            release(MavenPublication) {
-                from components.release
-                groupId = 'com.zhuhai.network'
-                artifactId = 'http'
-                version = '1.0.0'
-            }
-        }
-    }
-} 
+//afterEvaluate {
+//    publishing {
+//        publications {
+//            maven(MavenPublication) {
+//                artifact("$buildDir/outputs/aar/${project.name}-release.aar")
+//
+//                artifact sourcesJar
+//                artifact javadocJar
+//
+//                groupId = 'io.github.vance0901'
+//                artifactId = 'http'
+//                version = '1.0.0'
+//
+//                pom {
+//                    name = 'HTTP Network Request Library'
+//                    description = 'A Retrofit-based HTTP network request encapsulation library that provides simple and easy-to-use API interfaces with complete network request functionality.'
+//                    url = 'https://github.com/vance0901/ZhuHaiHttp'
+//
+//                    licenses {
+//                        license {
+//                            name = 'The Apache License, Version 2.0'
+//                            url = 'http://www.apache.org/licenses/LICENSE-2.0.txt'
+//                        }
+//                    }
+//
+//                    developers {
+//                        developer {
+//                            id = 'vance0901'
+//                            name = 'Vance'
+//                            email = 'zhuhai0901@gmail.com'
+//                        }
+//                    }
+//
+//                    scm {
+//                        connection = 'scm:git:github.com/vance0901/ZhuHaiHttp.git'
+//                        developerConnection = 'scm:git:ssh://github.com/vance0901/ZhuHaiHttp.git'
+//                        url = 'https://github.com/vance0901/ZhuHaiHttp'
+//                    }
+//
+//                    withXml {
+//                        def dependenciesNode = asNode().appendNode('dependencies')
+//
+//                        configurations.implementation.allDependencies.each {
+//                            if (it.group != null && it.name != null && it.version != null) {
+//                                def dependencyNode = dependenciesNode.appendNode('dependency')
+//                                dependencyNode.appendNode('groupId', it.group)
+//                                dependencyNode.appendNode('artifactId', it.name)
+//                                dependencyNode.appendNode('version', it.version)
+//                                dependencyNode.appendNode('scope', 'compile')
+//                            }
+//                        }
+//
+//                        configurations.api.allDependencies.each {
+//                            if (it.group != null && it.name != null && it.version != null) {
+//                                def dependencyNode = dependenciesNode.appendNode('dependency')
+//                                dependencyNode.appendNode('groupId', it.group)
+//                                dependencyNode.appendNode('artifactId', it.name)
+//                                dependencyNode.appendNode('version', it.version)
+//                                dependencyNode.appendNode('scope', 'compile')
+//                            }
+//                        }
+//                    }
+//                }
+//            }
+//        }
+//    }
+//
+//    signing {
+//        sign publishing.publications.maven
+//    }
+//}

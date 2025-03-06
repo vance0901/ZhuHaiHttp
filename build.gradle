@@ -1,16 +1,23 @@
 // Top-level build file where you can add configuration options common to all sub-projects/modules.
+
 buildscript {
     repositories {
         google()
         mavenCentral()
+        gradlePluginPortal()
     }
     dependencies {
         classpath "com.android.tools.build:gradle:4.2.2"
+        // Nexus发布插件依赖
+//        classpath "io.github.gradle-nexus:publish-plugin:1.3.0"
 
         // NOTE: Do not place your application dependencies here; they belong
         // in the individual module build.gradle files
     }
 }
+
+// 在根目录应用Nexus发布插件
+//apply plugin: "io.github.gradle-nexus.publish-plugin"
 
 allprojects {
     repositories {
@@ -23,3 +30,19 @@ allprojects {
 task clean(type: Delete) {
     delete rootProject.buildDir
 }
+
+// Maven Central发布配置
+//nexusPublishing {
+//    repositories {
+//        sonatype {
+//            // 使用正确的Sonatype OSSRH API端点
+//            // 为新用户（2021年2月24日之后注册）使用s01子域名
+//            nexusUrl = uri("https://s01.oss.sonatype.org/service/local/")
+//            snapshotRepositoryUrl = uri("https://s01.oss.sonatype.org/content/repositories/snapshots/")
+//
+//            // 更新认证信息，使用JIRA账户和密码
+//            username = project.findProperty("sonatypeUsername") ?: System.getenv("SONATYPE_USERNAME")
+//            password = project.findProperty("sonatypePassword") ?: System.getenv("SONATYPE_PASSWORD")
+//        }
+//    }
+//}

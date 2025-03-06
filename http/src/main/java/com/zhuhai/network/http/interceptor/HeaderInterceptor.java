@@ -3,7 +3,6 @@ package com.zhuhai.network.http.interceptor;
 import android.text.TextUtils;
 import android.util.Log;
 
-import androidx.annotation.NonNull;
 
 import java.io.IOException;
 import java.util.HashMap;
@@ -32,9 +31,8 @@ public class HeaderInterceptor implements Interceptor {
     // 用于标识是否移除该Header的前缀
     private static final String REMOVE_HEADER_PREFIX = "X-Remove-Header:";
 
-    @NonNull
     @Override
-    public Response intercept(@NonNull Chain chain) throws IOException {
+    public Response intercept(Chain chain) throws IOException {
         Request originalRequest = chain.request();
         Request.Builder builder = originalRequest.newBuilder();
 

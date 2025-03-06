@@ -54,6 +54,6 @@ public interface UserApiServiceInterface {
     Call<BaseResponse<Void>> deleteUser(@Path("id") long id);
     
     // 批量删除用户
-    @HTTP(method = "DELETE", path = "bu-api/v1/analysis/delete", hasBody = true)
+    @HTTP(method = "DELETE", path = "delete", hasBody = true)
     Call<BaseResponse<String>> batchDeleteUsers(@Body List<String> userIds);
 } 
