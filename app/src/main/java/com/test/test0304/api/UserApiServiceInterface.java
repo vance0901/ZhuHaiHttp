@@ -2,7 +2,7 @@ package com.test.test0304.api;
 
 import com.test.test0304.model.LoginResponse;
 import com.test.test0304.model.UserInfo;
-import com.zhuhai.network.http.model.BaseResponse;
+import com.vance0901.zhuhai.network.http.model.BaseResponse;
 
 import java.util.List;
 

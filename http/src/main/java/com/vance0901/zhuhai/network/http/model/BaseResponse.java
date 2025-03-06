@@ -1,4 +1,4 @@
-package com.zhuhai.network.http.model;
+package com.vance0901.zhuhai.network.http.model;
 
 /**
  * 网络响应基类

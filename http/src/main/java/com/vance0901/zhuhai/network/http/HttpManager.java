@@ -1,7 +1,7 @@
-package com.zhuhai.network.http;
+package com.vance0901.zhuhai.network.http;
 
-import com.zhuhai.network.http.config.HttpConfig;
-import com.zhuhai.network.http.interceptor.HeaderInterceptor;
+import com.vance0901.zhuhai.network.http.config.HttpConfig;
+import com.vance0901.zhuhai.network.http.interceptor.HeaderInterceptor;
 
 import java.util.Map;
 import java.util.concurrent.TimeUnit;

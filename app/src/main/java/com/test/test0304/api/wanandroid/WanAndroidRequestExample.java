@@ -5,7 +5,7 @@ import android.util.Log;
 import android.widget.Toast;
 
 import com.test.test0304.model.wanandroid.UserInfoResponse;
-import com.zhuhai.network.http.callback.RequestCallback;
+import com.vance0901.zhuhai.network.http.callback.RequestCallback;
 
 /**
  * WanAndroid API请求示例类

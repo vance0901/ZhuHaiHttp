@@ -3,8 +3,8 @@ package com.test.test0304;
 import android.app.Application;
 import android.util.Log;
 
-import com.zhuhai.network.http.HttpManager;
-import com.zhuhai.network.http.config.HttpConfig;
+import com.vance0901.zhuhai.network.http.HttpManager;
+import com.vance0901.zhuhai.network.http.config.HttpConfig;
 
 import okhttp3.logging.HttpLoggingInterceptor;
 

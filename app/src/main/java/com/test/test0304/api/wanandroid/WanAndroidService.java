@@ -1,8 +1,8 @@
 package com.test.test0304.api.wanandroid;
 
 import com.test.test0304.model.wanandroid.UserInfoResponse;
-import com.zhuhai.network.http.callback.RequestCallback;
-import com.zhuhai.network.http.service.BaseApiService;
+import com.vance0901.zhuhai.network.http.callback.RequestCallback;
+import com.vance0901.zhuhai.network.http.service.BaseApiService;
 
 /**
  * WanAndroid网站服务类

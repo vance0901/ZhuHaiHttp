@@ -2,8 +2,8 @@ package com.test.test0304.api;
 
 import com.test.test0304.model.LoginResponse;
 import com.test.test0304.model.UserInfo;
-import com.zhuhai.network.http.callback.RequestCallback;
-import com.zhuhai.network.http.service.BaseApiService;
+import com.vance0901.zhuhai.network.http.callback.RequestCallback;
+import com.vance0901.zhuhai.network.http.service.BaseApiService;
 
 import java.util.List;
 

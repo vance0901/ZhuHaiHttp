@@ -1,4 +1,4 @@
-package com.zhuhai.network.http.callback;
+package com.vance0901.zhuhai.network.http.callback;
 
 /**
  * 网络请求回调接口 Network request callback interface

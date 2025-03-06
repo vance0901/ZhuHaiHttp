@@ -1,4 +1,4 @@
-package com.zhuhai.network.http.config;
+package com.vance0901.zhuhai.network.http.config;
 
 import okhttp3.logging.HttpLoggingInterceptor;
 

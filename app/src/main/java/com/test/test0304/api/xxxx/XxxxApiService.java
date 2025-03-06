@@ -5,7 +5,7 @@ import com.test.test0304.model.xx.XxLoginRequest;
 import com.test.test0304.model.xx.XxLoginResponse;
 import com.test.test0304.model.xx.UserUpdateRequest;
 import com.test.test0304.model.xx.UserUpdateResponse;
-import com.zhuhai.network.http.model.BaseResponse;
+import com.vance0901.zhuhai.network.http.model.BaseResponse;
 
 import retrofit2.Call;
 import retrofit2.http.Body;

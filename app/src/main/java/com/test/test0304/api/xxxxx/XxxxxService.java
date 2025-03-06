@@ -6,8 +6,8 @@ import com.test.test0304.model.xx.UserUpdateRequest;
 import com.test.test0304.model.xx.UserUpdateResponse;
 import com.test.test0304.model.xx.XxLoginRequest;
 import com.test.test0304.model.xx.XxLoginResponse;
-import com.zhuhai.network.http.callback.RequestCallback;
-import com.zhuhai.network.http.service.BaseApiService;
+import com.vance0901.zhuhai.network.http.callback.RequestCallback;
+import com.vance0901.zhuhai.network.http.service.BaseApiService;
 
 /**
  * xxxx业xxxAPI服务类

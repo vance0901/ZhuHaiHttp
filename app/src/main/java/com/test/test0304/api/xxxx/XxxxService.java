@@ -6,8 +6,9 @@ import com.test.test0304.model.xx.DeleteResponse;
 import com.test.test0304.model.xx.XxLoginResponse;
 import com.test.test0304.model.xx.UserUpdateRequest;
 import com.test.test0304.model.xx.UserUpdateResponse;
-import com.zhuhai.network.http.callback.RequestCallback;
-import com.zhuhai.network.http.service.BaseApiService;
+import com.vance0901.zhuhai.network.http.callback.RequestCallback;
+import com.vance0901.zhuhai.network.http.model.BaseResponse;
+import com.vance0901.zhuhai.network.http.service.BaseApiService;
 
 import java.util.List;
 
@@ -93,19 +94,19 @@ public class XxxxService extends BaseApiService<XxxxApiService> {
      * @param call 原始API调用
      * @param callback 回调
      */
-    private void executeDeleteRequest(retrofit2.Call<com.zhuhai.network.http.model.BaseResponse<String>> call, 
+    private void executeDeleteRequest(retrofit2.Call<BaseResponse<String>> call,
                                       final RequestCallback<DeleteResponse> callback) {
         if (callback != null) {
             callback.onStart();
         }
 
-        call.enqueue(new retrofit2.Callback<com.zhuhai.network.http.model.BaseResponse<String>>() {
+        call.enqueue(new retrofit2.Callback<BaseResponse<String>>() {
             @Override
-            public void onResponse(retrofit2.Call<com.zhuhai.network.http.model.BaseResponse<String>> call, 
-                                 retrofit2.Response<com.zhuhai.network.http.model.BaseResponse<String>> response) {
+            public void onResponse(retrofit2.Call<BaseResponse<String>> call,
+                                 retrofit2.Response<BaseResponse<String>> response) {
                 if (callback != null) {
                     if (response.isSuccessful() && response.body() != null) {
-                        com.zhuhai.network.http.model.BaseResponse<String> baseResponse = response.body();
+                        BaseResponse<String> baseResponse = response.body();
                         if (baseResponse.isSuccess()) {
                             // 将String转换为DeleteResponse
                             DeleteResponse deleteResponse = new DeleteResponse();
@@ -124,7 +125,7 @@ public class XxxxService extends BaseApiService<XxxxApiService> {
             }
 
             @Override
-            public void onFailure(retrofit2.Call<com.zhuhai.network.http.model.BaseResponse<String>> call, Throwable t) {
+            public void onFailure(retrofit2.Call<BaseResponse<String>> call, Throwable t) {
                 if (callback != null) {
                     callback.onError(-1, t.getMessage());
                     callback.onComplete();

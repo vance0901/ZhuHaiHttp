@@ -1,7 +1,7 @@
 package com.test.test0304.api.wanandroid;
 
 import com.test.test0304.model.wanandroid.UserInfoResponse;
-import com.zhuhai.network.http.model.BaseResponse;
+import com.vance0901.zhuhai.network.http.model.BaseResponse;
 
 import retrofit2.Call;
 import retrofit2.http.Field;

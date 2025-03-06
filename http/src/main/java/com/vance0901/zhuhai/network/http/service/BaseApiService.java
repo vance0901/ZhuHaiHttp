@@ -1,8 +1,8 @@
-package com.zhuhai.network.http.service;
+package com.vance0901.zhuhai.network.http.service;
 
-import com.zhuhai.network.http.HttpManager;
-import com.zhuhai.network.http.callback.RequestCallback;
-import com.zhuhai.network.http.model.BaseResponse;
+import com.vance0901.zhuhai.network.http.HttpManager;
+import com.vance0901.zhuhai.network.http.callback.RequestCallback;
+import com.vance0901.zhuhai.network.http.model.BaseResponse;
 
 import retrofit2.Call;
 import retrofit2.Callback;
