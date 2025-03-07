@@ -447,5 +447,7 @@ com.zhuhai.network.http
 ``` 
 
 ```txt
+JAVA开发者或其他开发人员使用请参考:https://central.sonatype.com/artifact/io.github.vance0901/http/overview
+For JAVA developers or other developers to use, please refer to:https://central.sonatype.com/artifact/io.github.vance0901/http/overview
 更多详细用法请查看demo。 For more detailed usage, please refer to the demo.
 ``` 
