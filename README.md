@@ -28,7 +28,7 @@ A Retrofit-based HTTP network request encapsulation library that provides simple
 
 ```gradle
 dependencies {
-    implementation 'com.zhuhai.network:http:1.0.0'
+    implementation 'io.github.vance0901:http:1.0.0'
 }
 ```
 
