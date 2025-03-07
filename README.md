@@ -32,6 +32,12 @@ dependencies {
 }
 ```
 
+### 加入网络权限 Add network permissions
+```xml
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+```
+
 ## Usage
 ## 使用方法
 
@@ -438,4 +444,8 @@ com.zhuhai.network.http
                                    // 服务类
     └── BaseApiService.java        // Base API service class
                                    // 基础API服务类
+``` 
+
+```txt
+更多详细用法请查看demo。 For more detailed usage, please refer to the demo.
 ``` 
