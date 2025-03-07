@@ -419,11 +419,10 @@ This library uses multiple design patterns:
 ## 项目结构
 
 ```
-com.zhuhai.network.http
+com.vance0901.zhuhai.network.http
 ├── HttpManager.java               // HTTP Manager
 │                                  // HTTP管理器
-├── api                            // API interface definitions
-│                                  // API接口定义
+│                                  
 ├── callback                       // Callback interfaces
 │                                  // 回调接口
 │   └── RequestCallback.java       // Request callback interface
