@@ -452,3 +452,5 @@ For JAVA developers or other developers to use, please refer to:
 https://central.sonatype.com/artifact/io.github.vance0901/http/overview
 更多详细用法请查看demo。 For more detailed usage, please refer to the demo.
 ``` 
+
+[https://blog.csdn.net/zhuhai0613/article/details/146097981](https://blog.csdn.net/zhuhai0613/article/details/146097981)
